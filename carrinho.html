@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho | Porsche Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <a class="marca" href="index.html">Porsche Store</a>
+
+        <nav class="menu" aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="favoritos.html">Favoritos</a>
+            <a href="carrinho.html" aria-current="page">Carrinho</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="pagina-catalogo">
+        <p class="destaque-etiqueta">Sua seleção</p>
+        <h1>Mais perto do seu próximo sonho.</h1>
+
+        <p class="catalogo-descricao">
+            Confira os modelos selecionados antes de continuar.
+        </p>
+
+        <p class="nota-compra">
+            Projeto acadêmico. Valores fictícios, sem compra ou cobrança real.
+        </p>
+
+        <p id="mensagem-carrinho" role="status"></p>
+
+        <div id="carrinho-vazio" class="estado-vazio" hidden>
+            <h2>Seu carrinho está vazio.</h2>
+            <p>
+                Conheça os modelos e encontre o Porsche
+                que combina com você.
+            </p>
+            <a class="botao" href="catalogo.html">Explorar modelos →</a>
+        </div>
+
+        <div id="conteudo-carrinho" class="layout-carrinho" hidden>
+            <section aria-labelledby="titulo-itens">
+                <h2 id="titulo-itens">Modelos selecionados</h2>
+                <div id="lista-carrinho" class="lista-carrinho"></div>
+            </section>
+
+            <aside class="resumo-compra" aria-labelledby="titulo-resumo">
+                <p class="destaque-etiqueta">Próximo passo</p>
+                <h2 id="titulo-resumo">Resumo da compra</h2>
+
+                <div class="linha-resumo">
+                    <span>Modelos</span>
+                    <span id="quantidade-carrinho">0</span>
+                </div>
+
+                <div class="linha-resumo total-compra">
+                    <span>Total</span>
+                    <strong id="total-carrinho">R$ 0,00</strong>
+                </div>
+
+                <p class="nota-compra">
+                    Uma unidade por modelo selecionado.
+                </p>
+
+                <a class="botao" href="finalizacao.html">
+                    Finalizar compra →
+                </a>
+
+                <a class="continuar-explorando" href="catalogo.html">
+                    Continuar explorando
+                </a>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Porsche</p>
+    </footer>
+</body>
+</html>

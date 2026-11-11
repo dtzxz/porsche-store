@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>911 GT3 RS | Porsche Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <a class="marca" href="index.html">Porsche Store</a>
+
+        <nav class="menu" aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="favoritos.html">Favoritos</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="pagina-modelo">
+        <a class="voltar" href="catalogo.html">← Voltar ao catálogo</a>
+
+        <section class="modelo-apresentacao" aria-labelledby="nome-modelo">
+            <div class="modelo-foto revelar">
+                <img src="img/911-gt3-rs.jpg" alt="Porsche 911 GT3 RS">
+            </div>
+
+            <div class="modelo-informacoes revelar">
+                <p class="destaque-etiqueta">Família 911 · Geração 992</p>
+                <h1 id="nome-modelo">911 GT3 RS.</h1>
+
+                <p class="modelo-descricao">
+                    Para quem enxerga cada curva como parte da experiência.
+                    Um esportivo que expressa sua ligação com as pistas
+                    no motor, na aerodinâmica e no desenho.
+                </p>
+
+                <a class="botao" href="#detalhes">Explorar os detalhes ↓</a>
+
+                <button class="botao-favorito" type="button"
+                        data-favorito="911-gt3-rs" aria-pressed="false">
+                        ♡ Favoritar
+                    </button>
+                    <p class="mensagem-favorito" role="status"></p>
+            </div>
+        </section>
+
+        <section class="modelo-desempenho revelar"
+                 aria-labelledby="titulo-desempenho">
+            <p class="destaque-etiqueta">Performance</p>
+            <h2 id="titulo-desempenho">Vocação para as pistas.</h2>
+
+            <dl class="grade-desempenho">
+                <div>
+                    <dt>Potência</dt>
+                    <dd>525 <span>cv</span></dd>
+                </div>
+                <div>
+                    <dt>0 a 100 km/h</dt>
+                    <dd>3,2 <span>s</span></dd>
+                </div>
+                <div>
+                    <dt>Velocidade máxima</dt>
+                    <dd>296 <span>km/h</span></dd>
+                </div>
+            </dl>
+
+            <p class="desempenho-nota">
+                Dados de fábrica do 911 GT3 RS 992,
+                apresentado em 2022.
+            </p>
+        </section>
+
+        <section class="modelo-detalhes revelar" id="detalhes"
+                 aria-labelledby="titulo-detalhes">
+            <div class="modelo-detalhes-texto">
+                <p class="destaque-etiqueta">Engenharia e propósito</p>
+                <h2 id="titulo-detalhes">Cada elemento tem uma função.</h2>
+
+                <p>
+                    O motor boxer aspirado de 4,0 litros entrega
+                    525 cv e trabalha com uma transmissão PDK
+                    de sete marchas. A proposta combina respostas
+                    do motor com soluções inspiradas no automobilismo.
+                </p>
+
+                <p>
+                    A aerodinâmica ativa e a asa traseira de dois
+                    elementos fazem parte da identidade do modelo.
+                    Mais do que uma assinatura visual, esse conjunto
+                    ajuda a gerar força aerodinâmica para manter
+                    o carro pressionado contra o solo.
+                </p>
+
+                <button class="botao botao-comprar" type="button"
+                        data-comprar="911-gt3-rs">
+                    Adicionar ao carrinho
+                </button>
+
+                <a class="link-carrinho" href="carrinho.html">Ver carrinho →</a>
+
+                <p class="mensagem-carrinho" role="status"></p>
+            </div>
+
+            <div class="ficha-modelo">
+                <table>
+                    <caption>Ficha técnica — GT3 RS 992</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Motor</th>
+                            <td>Boxer aspirado de 6 cilindros</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cilindrada</th>
+                            <td>4,0 litros</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Potência</th>
+                            <td>525 cv</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Transmissão</th>
+                            <td>PDK de 7 marchas</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Aerodinâmica</th>
+                            <td>Ativa, com sistema DRS</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">0 a 100 km/h</th>
+                            <td>3,2 s</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Velocidade máxima</th>
+                            <td>296 km/h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Porsche</p>
+    </footer>
+</body>
+</html>

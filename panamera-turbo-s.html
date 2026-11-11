@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panamera Turbo S | Porsche Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <a class="marca" href="index.html">Porsche Store</a>
+
+        <nav class="menu" aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="favoritos.html">Favoritos</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="pagina-modelo">
+        <a class="voltar" href="catalogo.html">← Voltar ao catálogo</a>
+
+        <section class="modelo-apresentacao" aria-labelledby="nome-modelo">
+            <div class="modelo-foto revelar">
+                <img src="img/panamera-turbo-s.jpg"
+                     alt="Porsche Panamera Turbo S">
+            </div>
+
+            <div class="modelo-informacoes revelar">
+                <p class="destaque-etiqueta">Família Panamera · Turbo S 2020</p>
+                <h1 id="nome-modelo">Panamera Turbo S.</h1>
+
+                <p class="modelo-descricao">
+                    Elegância para chegar. Performance para seguir.
+                    Uma interpretação do espírito Porsche que
+                    também valoriza o conforto de cada viagem.
+                </p>
+
+                <a class="botao" href="#detalhes">Explorar os detalhes ↓</a>
+
+                <button class="botao-favorito" type="button"
+                        data-favorito="panamera-turbo-s" aria-pressed="false">
+                        ♡ Favoritar
+                    </button>
+                    <p class="mensagem-favorito" role="status"></p>
+            </div>
+        </section>
+
+        <section class="modelo-desempenho revelar"
+                 aria-labelledby="titulo-desempenho">
+            <p class="destaque-etiqueta">Performance</p>
+            <h2 id="titulo-desempenho">Presença que vai além do design.</h2>
+
+            <dl class="grade-desempenho">
+                <div>
+                    <dt>Potência</dt>
+                    <dd>630 <span>cv</span></dd>
+                </div>
+                <div>
+                    <dt>0 a 100 km/h</dt>
+                    <dd>3,1 <span>s</span></dd>
+                </div>
+                <div>
+                    <dt>Velocidade máxima</dt>
+                    <dd>315 <span>km/h</span></dd>
+                </div>
+            </dl>
+
+            <p class="desempenho-nota">
+                Dados de fábrica do Turbo S a combustão
+                apresentado em 2020. Aceleração no modo Sport Plus.
+            </p>
+        </section>
+
+        <section class="modelo-detalhes revelar" id="detalhes"
+                 aria-labelledby="titulo-detalhes">
+            <div class="modelo-detalhes-texto">
+                <p class="destaque-etiqueta">Esportividade e conforto</p>
+                <h2 id="titulo-detalhes">Para aproveitar todo o caminho.</h2>
+
+                <p>
+                    O V8 biturbo de 4,0 litros entrega 630 cv
+                    e 820 Nm de torque. No modo Sport Plus,
+                    o Panamera Turbo S alcança 100 km/h em
+                    3,1 segundos, segundo os dados de fábrica.
+                </p>
+
+                <p>
+                    A proposta reúne desempenho esportivo e
+                    conforto em uma carroceria de quatro portas.
+                    Para quem imagina viagens mais longas,
+                    o Panamera oferece uma maneira diferente
+                    de viver a identidade da marca.
+                </p>
+
+                <button class="botao botao-comprar" type="button"
+                        data-comprar="panamera-turbo-s">
+                    Adicionar ao carrinho
+                </button>
+
+                <a class="link-carrinho" href="carrinho.html">Ver carrinho →</a>
+
+                <p class="mensagem-carrinho" role="status"></p>
+            </div>
+
+            <div class="ficha-modelo">
+                <table>
+                    <caption>Ficha técnica — Turbo S apresentado em 2020</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Motor</th>
+                            <td>V8 biturbo a combustão</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cilindrada</th>
+                            <td>4,0 litros</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Potência</th>
+                            <td>630 cv</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Torque</th>
+                            <td>820 Nm</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Versão</th>
+                            <td>Turbo S, sem sistema híbrido</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">0 a 100 km/h</th>
+                            <td>3,1 s no modo Sport Plus</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Velocidade máxima</th>
+                            <td>315 km/h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Porsche</p>
+    </footer>
+</body>
+</html>

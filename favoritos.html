@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos | Porsche Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <a class="marca" href="index.html">Porsche Store</a>
+
+        <nav class="menu" aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="favoritos.html" aria-current="page">Favoritos</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="pagina-catalogo">
+        <section class="modelos" aria-labelledby="titulo-favoritos">
+            <p class="destaque-etiqueta">Sua seleção</p>
+            <h1 id="titulo-favoritos">Seus próximos sonhos.</h1>
+
+            <p class="catalogo-descricao">
+                Reúna os modelos que chamaram sua atenção
+                e volte para conhecer cada detalhe.
+            </p>
+
+            <p id="resumo-favoritos" role="status"></p>
+
+            <div id="favoritos-vazio" class="estado-vazio" hidden>
+                <h2>Sua seleção começa aqui.</h2>
+                <p>
+                    Explore o catálogo e use o botão Favoritar
+                    na página de um modelo para salvá-lo.
+                </p>
+                <a class="botao" href="catalogo.html">Explorar modelos →</a>
+            </div>
+
+            <div id="lista-favoritos" class="grade-modelos"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Porsche</p>
+    </footer>
+</body>
+</html>

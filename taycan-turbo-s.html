@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taycan Turbo S | Porsche Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <a class="marca" href="index.html">Porsche Store</a>
+
+        <nav class="menu" aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="favoritos.html">Favoritos</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="pagina-modelo">
+        <a class="voltar" href="catalogo.html">← Voltar ao catálogo</a>
+
+        <section class="modelo-apresentacao" aria-labelledby="nome-modelo">
+            <div class="modelo-foto revelar">
+                <img src="img/taycan-turbo-s.jpg" alt="Porsche Taycan Turbo S">
+            </div>
+
+            <div class="modelo-informacoes revelar">
+                <p class="destaque-etiqueta">Família Taycan · Versão 2019–2023</p>
+                <h1 id="nome-modelo">Taycan Turbo S.</h1>
+
+                <p class="modelo-descricao">
+                    Uma nova forma de sentir a performance.
+                    A identidade esportiva da Porsche em uma
+                    experiência de condução totalmente elétrica.
+                </p>
+
+                <a class="botao" href="#detalhes">Explorar os detalhes ↓</a>
+
+                <button class="botao-favorito" type="button"
+                        data-favorito="taycan-turbo-s" aria-pressed="false">
+                        ♡ Favoritar
+                    </button>
+                    <p class="mensagem-favorito" role="status"></p>
+            </div>
+        </section>
+
+        <section class="modelo-desempenho revelar"
+                 aria-labelledby="titulo-desempenho">
+            <p class="destaque-etiqueta">Performance elétrica</p>
+            <h2 id="titulo-desempenho">Outra energia. A mesma paixão.</h2>
+
+            <dl class="grade-desempenho">
+                <div>
+                    <dt>Potência em overboost</dt>
+                    <dd>761 <span>cv</span></dd>
+                </div>
+                <div>
+                    <dt>0 a 100 km/h</dt>
+                    <dd>2,8 <span>s</span></dd>
+                </div>
+                <div>
+                    <dt>Velocidade máxima</dt>
+                    <dd>260 <span>km/h</span></dd>
+                </div>
+            </dl>
+
+            <p class="desempenho-nota">
+                Dados da versão anterior à atualização de 2024.
+                Até 761 cv em overboost com Launch Control.
+                Aceleração com Launch Control.
+            </p>
+        </section>
+
+        <section class="modelo-detalhes revelar" id="detalhes"
+                 aria-labelledby="titulo-detalhes">
+            <div class="modelo-detalhes-texto">
+                <p class="destaque-etiqueta">Uma nova perspectiva</p>
+                <h2 id="titulo-detalhes">Elétrico na essência. Porsche na atitude.</h2>
+
+                <p>
+                    O Taycan Turbo S utiliza dois motores elétricos,
+                    um em cada eixo, e tração integral. Com Launch
+                    Control, a potência em overboost chega a 761 cv
+                    para a aceleração de partida.
+                </p>
+
+                <p>
+                    No eixo traseiro, uma transmissão de duas marchas
+                    combina a força na arrancada com o desempenho
+                    em velocidades mais altas. Uma solução que
+                    mostra como a engenharia elétrica também
+                    pode ter personalidade esportiva.
+                </p>
+
+                <button class="botao botao-comprar" type="button"
+                        data-comprar="taycan-turbo-s">
+                    Adicionar ao carrinho
+                </button>
+
+                <a class="link-carrinho" href="carrinho.html">Ver carrinho →</a>
+
+                <p class="mensagem-carrinho" role="status"></p>
+            </div>
+
+            <div class="ficha-modelo">
+                <table>
+                    <caption>Ficha técnica — Taycan Turbo S 2019–2023</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Motorização</th>
+                            <td>Totalmente elétrica</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Motores</th>
+                            <td>Dois, um em cada eixo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Tração</th>
+                            <td>Integral</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Overboost</th>
+                            <td>Até 761 cv com Launch Control</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Transmissão traseira</th>
+                            <td>2 marchas</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">0 a 100 km/h</th>
+                            <td>2,8 s com Launch Control</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Velocidade máxima</th>
+                            <td>260 km/h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Porsche</p>
+    </footer>
+</body>
+</html>

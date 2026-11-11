@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Porsche Store</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body class="pagina-com-bootstrap">
+    <header class="cabecalho">
+        <a class="marca" href="index.html">Porsche Store</a>
+
+        <nav class="navbar navbar-expand-lg menu-bootstrap"
+             aria-label="Menu principal" data-bs-theme="dark">
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu-contato"
+                aria-controls="menu-contato"
+                aria-expanded="false"
+                aria-label="Abrir ou fechar menu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu-contato">
+                <div class="navbar-nav gap-lg-2">
+                    <a class="nav-link" href="index.html">Início</a>
+                    <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    <a class="nav-link" href="favoritos.html">Favoritos</a>
+                    <a class="nav-link" href="carrinho.html">Carrinho</a>
+                    <a class="nav-link" href="contato.html"
+                       aria-current="page">Contato</a>
+                    <a class="nav-link"
+                       href="https://www.porsche.com/brazil/pt/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Porsche oficial ↗
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pagina-catalogo pagina-contato">
+        <p class="destaque-etiqueta">Vamos conversar</p>
+        <h1>O próximo passo começa com você.</h1>
+
+        <p class="catalogo-descricao">
+            Escolha um assunto e conte o que você gostaria de saber.
+        </p>
+
+        <div class="row g-4 mt-3">
+            <div class="col-lg-4">
+                <aside class="card card-atendimento h-100">
+                    <div class="card-body p-4">
+                        <p class="destaque-etiqueta">Sua experiência</p>
+                        <h2 class="h3 mb-3">Cada detalhe importa.</h2>
+
+                        <p>
+                            Quer conhecer melhor um modelo ou compartilhar
+                            uma dúvida? Organize sua mensagem no formulário.
+                        </p>
+
+                        <ul class="lista-atendimento">
+                            <li>Informações sobre os modelos</li>
+                            <li>Dúvidas sobre o site</li>
+                            <li>Sugestões e comentários</li>
+                        </ul>
+
+                        <p class="nota-compra mt-4 mb-0">
+                            Projeto acadêmico, sem vínculo com a Porsche.
+                            Este formulário não envia mensagens.
+                            Use dados fictícios para testar.
+                        </p>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="col-lg-8">
+                <section class="card card-formulario">
+                    <div class="card-body p-4 p-md-5">
+                        <h2 class="h3 mb-4">Como podemos ajudar?</h2>
+
+                        <form id="form-contato" class="formulario-loja">
+                            <div class="campo-formulario">
+                                <label for="contato-nome" class="form-label">
+                                    Nome
+                                </label>
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    id="contato-nome"
+                                    name="nome"
+                                    placeholder="Ex.: Daniel Silva"
+                                    minlength="3"
+                                    maxlength="100"
+                                    pattern=".*\S.*"
+                                    required
+                                >
+                            </div>
+
+                            <div class="campo-formulario">
+                                <label for="contato-email" class="form-label">
+                                    E-mail
+                                </label>
+                                <input
+                                    class="form-control"
+                                    type="email"
+                                    id="contato-email"
+                                    name="email"
+                                    placeholder="Ex.: daniel@example.com"
+                                    maxlength="150"
+                                    required
+                                >
+                            </div>
+
+                            <div class="campo-formulario">
+                                <label for="contato-assunto" class="form-label">
+                                    Assunto
+                                </label>
+                                <select
+                                    class="form-select"
+                                    id="contato-assunto"
+                                    name="assunto"
+                                    required
+                                >
+                                    <option value="">Selecione um assunto</option>
+                                    <option value="modelos">
+                                        Informações sobre modelos
+                                    </option>
+                                    <option value="site">Dúvidas sobre o site</option>
+                                    <option value="sugestoes">
+                                        Sugestões e comentários
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="campo-formulario">
+                                <label for="contato-mensagem" class="form-label">
+                                    Mensagem
+                                </label>
+                                <textarea
+                                    class="form-control"
+                                    id="contato-mensagem"
+                                    name="mensagem"
+                                    rows="5"
+                                    placeholder="Conte um pouco mais sobre sua dúvida."
+                                    minlength="10"
+                                    maxlength="1000"
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <p id="status-rascunho"
+                               class="nota-compra mb-0"
+                               role="status">
+                                Seu rascunho é salvo apenas neste navegador.
+                            </p>
+
+                            <div class="d-flex flex-wrap gap-3">
+                                <button
+                                    class="btn botao botao-comprar"
+                                    type="submit"
+                                >
+                                    Concluir mensagem →
+                                </button>
+
+                                <button
+                                    class="btn botao-limpar"
+                                    type="button"
+                                    id="limpar-contato"
+                                >
+                                    Limpar formulário
+                                </button>
+                            </div>
+                        </form>
+
+                        <div
+                            id="retorno-contato"
+                            class="alert mt-4 mb-0"
+                            role="status"
+                            tabindex="-1"
+                            hidden
+                        ></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Porsche</p>
+    </footer>
+</body>
+</html>

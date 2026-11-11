@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cayenne Turbo GT | Porsche Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <a class="marca" href="index.html">Porsche Store</a>
+
+        <nav class="menu" aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="favoritos.html">Favoritos</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="pagina-modelo">
+        <a class="voltar" href="catalogo.html">← Voltar ao catálogo</a>
+
+        <section class="modelo-apresentacao" aria-labelledby="nome-modelo">
+            <div class="modelo-foto revelar">
+                <img src="img/cayenne-turbo-gt.webp"
+                     alt="Porsche Cayenne Turbo GT">
+            </div>
+
+            <div class="modelo-informacoes revelar">
+                <p class="destaque-etiqueta">Família Cayenne · Turbo GT 2021</p>
+                <h1 id="nome-modelo">Cayenne Turbo GT.</h1>
+
+                <p class="modelo-descricao">
+                    Uma presença impossível de ignorar.
+                    O formato de um SUV Coupé encontra uma
+                    proposta que coloca a performance em primeiro plano.
+                </p>
+
+                <a class="botao" href="#detalhes">Explorar os detalhes ↓</a>
+
+                <button class="botao-favorito" type="button"
+                        data-favorito="cayenne-turbo-gt" aria-pressed="false">
+                        ♡ Favoritar
+                    </button>
+                    <p class="mensagem-favorito" role="status"></p>
+            </div>
+        </section>
+
+        <section class="modelo-desempenho revelar"
+                 aria-labelledby="titulo-desempenho">
+            <p class="destaque-etiqueta">Performance</p>
+            <h2 id="titulo-desempenho">Espírito esportivo em outra dimensão.</h2>
+
+            <dl class="grade-desempenho">
+                <div>
+                    <dt>Potência</dt>
+                    <dd>640 <span>cv</span></dd>
+                </div>
+                <div>
+                    <dt>0 a 100 km/h</dt>
+                    <dd>3,3 <span>s</span></dd>
+                </div>
+                <div>
+                    <dt>Velocidade máxima</dt>
+                    <dd>300 <span>km/h</span></dd>
+                </div>
+            </dl>
+
+            <p class="desempenho-nota">
+                Dados de fábrica da versão apresentada em 2021.
+                Aceleração com Performance Start.
+            </p>
+        </section>
+
+        <section class="modelo-detalhes revelar" id="detalhes"
+                 aria-labelledby="titulo-detalhes">
+            <div class="modelo-detalhes-texto">
+                <p class="destaque-etiqueta">Uma proposta própria</p>
+                <h2 id="titulo-detalhes">Muito além da presença.</h2>
+
+                <p>
+                    O motor V8 biturbo de 4,0 litros entrega
+                    640 cv e 850 Nm de torque. Nesta versão,
+                    o Cayenne Turbo GT utiliza carroceria Coupé
+                    e configuração de quatro lugares.
+                </p>
+
+                <p>
+                    O acerto específico de chassi e do conjunto
+                    mecânico acompanha a proposta esportiva.
+                    É um modelo para quem gosta da presença de
+                    um SUV e busca uma conexão mais intensa
+                    com a experiência de dirigir.
+                </p>
+
+                <button class="botao botao-comprar" type="button"
+                        data-comprar="cayenne-turbo-gt">
+                    Adicionar ao carrinho
+                </button>
+
+                <a class="link-carrinho" href="carrinho.html">Ver carrinho →</a>
+
+                <p class="mensagem-carrinho" role="status"></p>
+            </div>
+
+            <div class="ficha-modelo">
+                <table>
+                    <caption>Ficha técnica — Turbo GT apresentado em 2021</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Motor</th>
+                            <td>V8 biturbo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cilindrada</th>
+                            <td>4,0 litros</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Potência</th>
+                            <td>640 cv</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Torque</th>
+                            <td>850 Nm</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Carroceria</th>
+                            <td>SUV Coupé de 4 lugares</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">0 a 100 km/h</th>
+                            <td>3,3 s com Performance Start</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Velocidade máxima</th>
+                            <td>300 km/h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Porsche</p>
+    </footer>
+</body>
+</html>

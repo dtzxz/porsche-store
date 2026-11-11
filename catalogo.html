@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche Store | Catálogo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <a class="marca" href="index.html">
+            Porsche Store
+        </a>
+
+        <nav class="menu" aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="catalogo.html" aria-current="page">Catálogo</a>
+            <a href="favoritos.html">Favoritos</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="pagina-catalogo">
+        <section class="modelos">
+            <p class="destaque-etiqueta">Explore a coleção</p>
+            <h1>Qual é o seu próximo Porsche?</h1>
+            <p class="catalogo-descricao">
+                Explore os modelos e conheça os detalhes de cada um.
+            </p>
+
+            <div class="busca-catalogo">
+                <label for="busca-modelo">Encontre um modelo</label>
+                <input
+                    type="search"
+                    id="busca-modelo"
+                    placeholder="Digite o nome: 911, Taycan, Cayenne..."
+                >
+            </div>
+
+            <div class="busca-catalogo">
+                <label for="filtro-familia">Família do modelo</label>
+                <select id="filtro-familia">
+                    <option value="todos">Todas as famílias</option>
+                    <option value="911">911</option>
+                    <option value="718">718</option>
+                    <option value="taycan">Taycan</option>
+                    <option value="panamera">Panamera</option>
+                    <option value="cayenne">Cayenne</option>
+                </select>
+            </div>
+
+            <p id="resultado-busca" role="status"></p>
+
+            <div class="grade-modelos">
+                <article class="card-modelo revelar" data-familia="911">
+                    <img
+                        src="img/911-turbo-s.webp"
+                        alt="Porsche 911 Turbo S"
+                        loading="lazy"
+                    >
+                    <div class="card-conteudo">
+                        <h3>911 Turbo S</h3>
+                        <p>Uma presença marcante em cada detalhe.</p>
+                        <a class="botao" href="911-turbo-s.html">
+                            Conhecer modelo
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card-modelo revelar" data-familia="911">
+                    <img
+                        src="img/911-gt3-rs.jpg"
+                        alt="Porsche 911 GT3 RS"
+                        loading="lazy"
+                    >
+                    <div class="card-conteudo">
+                        <h3>911 GT3 RS</h3>
+                        <p>Para quem vive a paixão pelo automobilismo.</p>
+                        <a class="botao" href="911-gt3-rs.html">
+                            Conhecer modelo
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card-modelo revelar" data-familia="taycan">
+                    <img
+                        src="img/taycan-turbo-s.jpg"
+                        alt="Porsche Taycan Turbo S"
+                        loading="lazy"
+                    >
+                    <div class="card-conteudo">
+                        <h3>Taycan Turbo S</h3>
+                        <p>Um novo olhar sobre a experiência Porsche.</p>
+                        <a class="botao" href="taycan-turbo-s.html">
+                            Conhecer modelo
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card-modelo revelar" data-familia="718">
+                    <img
+                        src="img/718-cayman-gt4-rs.webp"
+                        alt="Porsche 718 Cayman GT4 RS"
+                        loading="lazy"
+                    >
+                    <div class="card-conteudo">
+                        <h3>718 Cayman GT4 RS</h3>
+                        <p>Uma conexão direta com a paixão por dirigir.</p>
+                        <a class="botao" href="718-cayman-gt4-rs.html">
+                            Conhecer modelo
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card-modelo revelar" data-familia="panamera">
+                    <img
+                        src="img/panamera-turbo-s.jpg"
+                        alt="Porsche Panamera Turbo S"
+                        loading="lazy"
+                    >
+                    <div class="card-conteudo">
+                        <h3>Panamera Turbo S</h3>
+                        <p>Elegância e personalidade em cada viagem.</p>
+                        <a class="botao" href="panamera-turbo-s.html">
+                            Conhecer modelo
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card-modelo revelar" data-familia="cayenne">
+                    <img
+                        src="img/cayenne-turbo-gt.webp"
+                        alt="Porsche Taycan Turbo S"
+                        loading="lazy"
+                    >
+                    <div class="card-conteudo">
+                        <h3>Cayenne Turbo GT</h3>
+                        <p>Presença e atitude para novos caminhos.</p>
+                        <a class="botao" href="cayenne-turbo-gt.html">
+                            Conhecer modelo
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+
+        <section class="comparacao-modelos" aria-labelledby="titulo-comparacao">
+    <p class="destaque-etiqueta">Encontre seu estilo</p>
+    <h2 id="titulo-comparacao">Diferentes formas de sentir a performance.</h2>
+
+    <p class="comparacao-descricao">
+        Compare os principais números dos modelos apresentados
+        e descubra qual deles combina com você.
+    </p>
+
+    <div class="tabela-responsiva"
+         role="region"
+         aria-label="Comparação de desempenho dos modelos"
+         tabindex="0">
+        <table class="tabela-comparacao">
+            <caption>Desempenho dos modelos apresentados no catálogo</caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">Modelo</th>
+                    <th scope="col">Potência</th>
+                    <th scope="col">0 a 100 km/h</th>
+                    <th scope="col">Velocidade máxima</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">
+                        <a href="911-turbo-s.html">911 Turbo S</a>
+                    </th>
+                    <td>650 cv</td>
+                    <td>2,7 s</td>
+                    <td>330 km/h</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">
+                        <a href="911-gt3-rs.html">911 GT3 RS</a>
+                    </th>
+                    <td>525 cv</td>
+                    <td>3,2 s</td>
+                    <td>296 km/h</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">
+                        <a href="718-cayman-gt4-rs.html">
+                            718 Cayman GT4 RS
+                        </a>
+                    </th>
+                    <td>500 cv</td>
+                    <td>3,4 s</td>
+                    <td>315 km/h</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">
+                        <a href="taycan-turbo-s.html">Taycan Turbo S</a>
+                    </th>
+                    <td>Até 761 cv*</td>
+                    <td>2,8 s</td>
+                    <td>260 km/h</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">
+                        <a href="panamera-turbo-s.html">Panamera Turbo S</a>
+                    </th>
+                    <td>630 cv</td>
+                    <td>3,1 s</td>
+                    <td>315 km/h</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">
+                        <a href="cayenne-turbo-gt.html">Cayenne Turbo GT</a>
+                    </th>
+                    <td>640 cv</td>
+                    <td>3,3 s</td>
+                    <td>300 km/h</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="nota-comparacao">
+        Dados de fábrica das versões identificadas nas páginas individuais,
+        conforme suas condições de aceleração.
+        *Taycan: potência em overboost com Launch Control.
+        A comparação apresenta todos os modelos, independentemente
+        dos filtros do catálogo.
+    </p>
+</section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Porsche</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

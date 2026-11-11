@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalização | Porsche Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <a class="marca" href="index.html">Porsche Store</a>
+
+        <nav class="menu" aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="favoritos.html">Favoritos</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="pagina-catalogo">
+        <a class="voltar" href="carrinho.html">← Voltar ao carrinho</a>
+
+        <p class="destaque-etiqueta">Última etapa</p>
+        <h1>Seu próximo capítulo.</h1>
+
+        <p class="catalogo-descricao">
+            Preencha seus dados e confira os detalhes do pedido.
+        </p>
+
+        <p class="nota-compra">
+            Projeto acadêmico. Valores fictícios, sem compra ou cobrança real.
+            Utilize dados fictícios.
+        </p>
+
+        <div id="finalizacao-vazia" class="estado-vazio" hidden>
+            <h2>Adicione um modelo para continuar.</h2>
+            <a class="botao" href="catalogo.html">Explorar modelos →</a>
+        </div>
+
+        <div id="conteudo-finalizacao" class="layout-carrinho" hidden>
+            <section aria-labelledby="titulo-dados">
+                <h2 id="titulo-dados">Seus dados</h2>
+
+                <form id="form-finalizacao" class="formulario-loja">
+                    <div class="campo-formulario">
+                        <label for="nome-comprador">Nome</label>
+                        <input
+                            type="text"
+                            id="nome-comprador"
+                            name="nome"
+                            placeholder="Ex.: Daniel Silva"
+                            minlength="3"
+                            maxlength="100"
+                            pattern=".*\S.*"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="email-comprador">E-mail</label>
+                        <input
+                            type="email"
+                            id="email-comprador"
+                            name="email"
+                            placeholder="Ex.: daniel@example.com"
+                            maxlength="150"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="preferencia-contato">
+                            Preferência de contato
+                        </label>
+                        <select
+                            id="preferencia-contato"
+                            name="preferencia"
+                            required
+                        >
+                            <option value="">Selecione uma opção</option>
+                            <option value="email">E-mail</option>
+                            <option value="presencial">
+                                Atendimento presencial
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="observacoes-compra">
+                            Observações — opcional
+                        </label>
+                        <textarea
+                            id="observacoes-compra"
+                            name="observacoes"
+                            rows="4"
+                            maxlength="500"
+                            placeholder="O que você gostaria de saber sobre os modelos?"
+                        ></textarea>
+                    </div>
+
+                    <label class="aceite-simulacao">
+                        <input type="checkbox" id="aceite-compra" required>
+                        <span>
+                            Revisei os modelos selecionados e confirmo
+                            os dados informados.
+                        </span>
+                    </label>
+
+                    <button class="botao botao-comprar" type="submit">
+                        Confirmar pedido →
+                    </button>
+
+                    <p id="mensagem-finalizacao" role="status"></p>
+                </form>
+            </section>
+
+            <aside class="resumo-compra" aria-labelledby="titulo-revisao">
+                <p class="destaque-etiqueta">Sua seleção</p>
+                <h2 id="titulo-revisao">Confira seu pedido</h2>
+
+                <ul id="itens-finalizacao" class="itens-resumo"></ul>
+
+                <div class="linha-resumo total-compra">
+                    <span>Total</span>
+                    <strong id="total-finalizacao"></strong>
+                </div>
+
+                <p class="nota-compra">
+                    Confira os modelos e o valor total antes de confirmar.
+                </p>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Porsche</p>
+    </footer>
+</body>
+</html>

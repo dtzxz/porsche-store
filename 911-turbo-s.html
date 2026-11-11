@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>911 Turbo S | Porsche Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <a class="marca" href="index.html">Porsche Store</a>
+
+        <nav class="menu" aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="favoritos.html">Favoritos</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="pagina-modelo">
+        <a class="voltar" href="catalogo.html">← Voltar ao catálogo</a>
+
+        <section class="modelo-apresentacao" aria-labelledby="nome-modelo">
+            <div class="modelo-foto revelar">
+                <img src="img/911-turbo-s.webp" alt="Porsche 911 Turbo S">
+            </div>
+
+            <div class="modelo-informacoes revelar">
+                <p class="destaque-etiqueta">Família 911 · 992.1 Coupé</p>
+                <h1 id="nome-modelo">911 Turbo S.</h1>
+
+                <p class="modelo-descricao">
+                    Uma silhueta inconfundível. Uma presença marcante.
+                    O encontro entre a identidade do 911 e a intensidade
+                    de um motor boxer biturbo.
+                </p>
+
+                <a class="botao" href="#detalhes">Explorar os detalhes ↓</a>
+
+                <button class="botao-favorito" type="button"
+                        data-favorito="911-turbo-s" aria-pressed="false">
+                        ♡ Favoritar
+                    </button>
+                    <p class="mensagem-favorito" role="status"></p>
+            </div>
+        </section>
+
+        <section class="modelo-desempenho revelar"
+                 aria-labelledby="titulo-desempenho">
+            <p class="destaque-etiqueta">Performance</p>
+            <h2 id="titulo-desempenho">Números que impressionam.</h2>
+
+            <dl class="grade-desempenho">
+                <div>
+                    <dt>Potência</dt>
+                    <dd>650 <span>cv</span></dd>
+                </div>
+                <div>
+                    <dt>0 a 100 km/h</dt>
+                    <dd>2,7 <span>s</span></dd>
+                </div>
+                <div>
+                    <dt>Velocidade máxima</dt>
+                    <dd>330 <span>km/h</span></dd>
+                </div>
+            </dl>
+
+            <p class="desempenho-nota">
+                Dados de fábrica do 992.1 Coupé.
+                Aceleração com Launch Control.
+            </p>
+        </section>
+
+        <section class="modelo-detalhes revelar" id="detalhes"
+                 aria-labelledby="titulo-detalhes">
+            <div class="modelo-detalhes-texto">
+                <p class="destaque-etiqueta">Além dos números</p>
+                <h2 id="titulo-detalhes">A essência está nos detalhes.</h2>
+
+                <p>
+                    O motor boxer biturbo de 3.745 cm³ trabalha com
+                    a transmissão PDK de oito marchas. São 650 cv
+                    e 800 Nm de torque em um conjunto que coloca
+                    o desempenho no centro da experiência.
+                </p>
+
+                <p>
+                    Para quem se identifica com o desenho clássico
+                    do 911, o Turbo S representa uma combinação
+                    de tradição visual e personalidade esportiva.
+                    Um carro para observar com calma e imaginar
+                    a próxima viagem.
+                </p>
+
+                <button class="botao botao-comprar" type="button"
+                        data-comprar="911-turbo-s">
+                    Adicionar ao carrinho
+                </button>
+
+                <a class="link-carrinho" href="carrinho.html">Ver carrinho →</a>
+
+                <p class="mensagem-carrinho" role="status"></p>
+            </div>
+
+            <div class="ficha-modelo">
+                <table>
+                    <caption>Ficha técnica — 992.1 Coupé</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Motor</th>
+                            <td>Boxer biturbo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cilindrada</th>
+                            <td>3.745 cm³</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Potência</th>
+                            <td>650 cv</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Torque</th>
+                            <td>800 Nm</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Transmissão</th>
+                            <td>PDK de 8 marchas</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">0 a 100 km/h</th>
+                            <td>2,7 s com Launch Control</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Velocidade máxima</th>
+                            <td>330 km/h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Porsche</p>
+    </footer>
+</body>
+</html>

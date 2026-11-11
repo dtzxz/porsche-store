@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido confirmado | Porsche Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <a class="marca" href="index.html">Porsche Store</a>
+
+        <nav class="menu" aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="favoritos.html">Favoritos</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="pagina-catalogo">
+        <section id="pedido-confirmado" class="confirmacao-pedido" hidden>
+            <p class="destaque-etiqueta">Pedido confirmado</p>
+            <h1>Um novo capítulo começa aqui.</h1>
+
+            <p id="saudacao-pedido" class="catalogo-descricao"></p>
+
+            <p class="nota-compra">
+                Projeto acadêmico. Valores fictícios, sem compra ou cobrança real.
+            </p>
+
+            <div class="resumo-compra">
+                <h2>Resumo do pedido</h2>
+
+                <p>
+                    Número do pedido:
+                    <strong id="numero-pedido"></strong>
+                </p>
+
+                <ul id="itens-pedido" class="itens-resumo"></ul>
+
+                <div class="linha-resumo total-compra">
+                    <span>Total</span>
+                    <strong id="total-pedido"></strong>
+                </div>
+            </div>
+
+            <a class="botao" href="catalogo.html">
+                Continuar explorando →
+            </a>
+        </section>
+
+        <section id="pedido-ausente" class="estado-vazio" hidden>
+            <h1>Nenhum pedido disponível.</h1>
+            <p>
+                Finalize seu pedido para visualizar os detalhes nesta página.
+            </p>
+            <a class="botao" href="carrinho.html">Ir ao carrinho →</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Porsche</p>
+    </footer>
+</body>
+</html>

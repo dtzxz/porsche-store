@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>718 Cayman GT4 RS | Porsche Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <a class="marca" href="index.html">Porsche Store</a>
+
+        <nav class="menu" aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="favoritos.html">Favoritos</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="pagina-modelo">
+        <a class="voltar" href="catalogo.html">← Voltar ao catálogo</a>
+
+        <section class="modelo-apresentacao" aria-labelledby="nome-modelo">
+            <div class="modelo-foto revelar">
+                <img src="img/718-cayman-gt4-rs.webp"
+                     alt="Porsche 718 Cayman GT4 RS">
+            </div>
+
+            <div class="modelo-informacoes revelar">
+                <p class="destaque-etiqueta">Família 718 · GT4 RS</p>
+                <h1 id="nome-modelo">718 Cayman GT4 RS.</h1>
+
+                <p class="modelo-descricao">
+                    Motor central. Personalidade intensa.
+                    Um esportivo que aproxima quem dirige
+                    da experiência mecânica e da emoção de cada curva.
+                </p>
+
+                <a class="botao" href="#detalhes">Explorar os detalhes ↓</a>
+
+                <button class="botao-favorito" type="button"
+                        data-favorito="718-cayman-gt4-rs" aria-pressed="false">
+                        ♡ Favoritar
+                    </button>
+                    <p class="mensagem-favorito" role="status"></p>
+            </div>
+        </section>
+
+        <section class="modelo-desempenho revelar"
+                 aria-labelledby="titulo-desempenho">
+            <p class="destaque-etiqueta">Performance</p>
+            <h2 id="titulo-desempenho">Feito para envolver.</h2>
+
+            <dl class="grade-desempenho">
+                <div>
+                    <dt>Potência</dt>
+                    <dd>500 <span>cv</span></dd>
+                </div>
+                <div>
+                    <dt>0 a 100 km/h</dt>
+                    <dd>3,4 <span>s</span></dd>
+                </div>
+                <div>
+                    <dt>Velocidade máxima</dt>
+                    <dd>315 <span>km/h</span></dd>
+                </div>
+            </dl>
+
+            <p class="desempenho-nota">
+                Dados de fábrica do 718 Cayman GT4 RS 4.0.
+                Aceleração com Launch Control.
+            </p>
+        </section>
+
+        <section class="modelo-detalhes revelar" id="detalhes"
+                 aria-labelledby="titulo-detalhes">
+            <div class="modelo-detalhes-texto">
+                <p class="destaque-etiqueta">Conexão com a experiência</p>
+                <h2 id="titulo-detalhes">O motor no centro da história.</h2>
+
+                <p>
+                    Posicionado entre os ocupantes e o eixo traseiro,
+                    o motor boxer aspirado de 4,0 litros entrega
+                    500 cv e pode atingir 9.000 rpm.
+                    A transmissão PDK de sete marchas completa o conjunto.
+                </p>
+
+                <p>
+                    A construção leve e a atenção à aerodinâmica
+                    acompanham a proposta do GT4 RS. É uma interpretação
+                    da família 718 voltada a quem valoriza a precisão
+                    e o envolvimento ao dirigir.
+                </p>
+
+                <button class="botao botao-comprar" type="button"
+                        data-comprar="718-cayman-gt4-rs">
+                    Adicionar ao carrinho
+                </button>
+
+                <a class="link-carrinho" href="carrinho.html">Ver carrinho →</a>
+
+                <p class="mensagem-carrinho" role="status"></p>
+            </div>
+
+            <div class="ficha-modelo">
+                <table>
+                    <caption>Ficha técnica — 718 Cayman GT4 RS</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Motor</th>
+                            <td>Boxer aspirado de 6 cilindros</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cilindrada</th>
+                            <td>4,0 litros</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Posição do motor</th>
+                            <td>Central</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Potência</th>
+                            <td>500 cv</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Transmissão</th>
+                            <td>PDK de 7 marchas</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">0 a 100 km/h</th>
+                            <td>3,4 s com Launch Control</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Velocidade máxima</th>
+                            <td>315 km/h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Porsche</p>
+    </footer>
+</body>
+</html>
